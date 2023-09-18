@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    position: relative;
+}
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 80% 20%;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    overflow: hidden;/* corta lo que sobre del contenedor */
+    z-index: 100;
+}
+.header__h2{
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.header__contImg{
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.header__foto{
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.header__fondo{
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+}
+
+.header__imagenFondo{
+    width: 100%;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.nav__contBotones{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+        
+}
+
+.nav__contBoton{
+    width: 10%;
+    height: 96%;
+    list-style: none;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.nav__boton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: aqua;  
+}
+
+.nav__boton:hover{
+    background-color: brown;
+    color: azure ;
+}
+
+.fond{
+    position: relative;
+    top: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fond__imagen{
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.acercaMi{
+    width: 100%;
+    margin: 2%;
+}
+
+.acercaMi h2{
+    font-size: 5vh;
+    text-align: center;
+}
+
+.acercaMi p{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: rgba(10, 121, 89, 0.5);
+    
+}
+
+.acercaMi p:hover{
+    color: brown;
+    font-weight: bold;
+}
+
+.habilidades{
+    width: 100%;
+    margin: 5%;
+}
+
+.habilidades h2{
+    font-size: 5vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.habilidades__contSkills{
+    display: grid;
+    margin-top: 1%;    
+    margin-left: 25%;
+    margin-right: 25%;
+    grid-template-columns: 20% 40% 40% ;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 60vh;
+    background: rgba(79, 121, 10, 0.5);
+}
+
+.habilidades__contSkills h3{
+    font-size: 3vh;
+}
+.habilidades__logo{
+    width: 50%;
+    height: 50%;
+}
+
+.habilidades__logoJava{
+    width: 70%;
+    height: 70%;
+    mix-blend-mode: normal; 
+   
+}
+
+.estudios{
+    width: 80%;
+    margin: 10%;
+    margin-right: 15%;
+    height: 100vh;
+}
+
+.estudios__titulo{
+    font-size: 5vh;    
+    text-align: center;
+    font-weight: bold;
+}
+
+.estudios__encabezado {
+    width: 100%;
+}
+.estudios__encabezado {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    margin-bottom: 3%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.estudios__encabezado h2{
+    text-align: center;
+    font-weight:bold ;
+}
+
+.estudios__realizados {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 50vh;
+    text-align: center;
+}
+
+.estudios__fondo{
+    background: rgba(223, 159, 100, 0.37);
+}
+
+.contactame {
+    width: 100%;
+    margin-top: 5vh;    
+}
+
+.contactame__redes{
+    margin: 15%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #575555af;
+}
+
+.contactame h2{
+    text-align: center;
+    font-weight: bold ;
+    font-size: 6vh;
+    
+}
+
+
+.contactame__boton:hover{
+   
+   transform: scale(2);
+  
+}
+
+.contactame__logo{
+    width: 10vh;
+    height: 10vh;
+    
+}
